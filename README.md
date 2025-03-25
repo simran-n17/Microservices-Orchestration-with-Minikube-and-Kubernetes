@@ -50,7 +50,7 @@ Configure Docker to use Minikube’s Docker daemon:
 eval $(minikube -p minikube docker-env)
 ```
 
-![img1](1.png)
+![img1](images/1.png)
 
 ### **3️⃣ Build and Deploy Services**
 
@@ -62,7 +62,7 @@ docker build -t backend-service .
 # Deploy the backend service
 kubectl apply -f ../kubernetes/backend-service.yaml
 ```
-![img2](2.png)
+![img2](images/2.png)
 #### **🔹 API Gateway**
 ```bash
 cd ../api-gateway
