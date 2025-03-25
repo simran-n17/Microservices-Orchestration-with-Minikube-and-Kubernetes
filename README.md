@@ -71,7 +71,7 @@ docker build -t api-gateway .
 # Deploy the API Gateway
 kubectl apply -f ../kubernetes/api-gateway.yaml
 ```
-![img3](3.png)
+![img3](images/3.png)
 
 ### **4️⃣ Verify Deployment**
 Check if everything is running correctly:
@@ -79,16 +79,16 @@ Check if everything is running correctly:
 kubectl get deployments
 kubectl get services
 ```
-![img4](4.png)
+![img4](images/4.png)
 ### **5️⃣ Access the Application**
 Expose and access the **API Gateway** service:
 ```bash
 minikube service api-gateway
 ```
 This opens a browser with the API Gateway response.
-![img5](5.png)
+![img5](images/5.png)
 
-![img6](6.png)
+![img6](images/6.png)
 
 ### **6️⃣ Monitoring and Debugging**
 To check logs for debugging:
@@ -100,11 +100,11 @@ kubectl logs deployment/backend-service
 # Get pod details
 kubectl describe pods
 ```
-![img7](7.png)
+![img7](images/7.png)
 
-![img8](8.png)
+![img8](images/8.png)
 
-![img9](9.png)
+![img9](images/9.png)
 
 ### **7️⃣ Clean Up Resources**
 When you're done, clean up everything:
@@ -115,7 +115,7 @@ kubectl delete -f kubernetes/backend-service.yaml
 # Stop Minikube
 minikube stop
 ```
-![img10](10.png)
+![img10](images/10.png)
 
 ---
 
